@@ -5,7 +5,7 @@ function App() {
   const [data, setData] = useState([{}])
 
   useEffect(() => {
-    fetch("/members").then(
+    fetch("members").then(
         res => res.json()
     ).then(
       data => {
@@ -19,10 +19,10 @@ function App() {
       <div>
 
           {(typeof data.members === 'undefined') ? (
-              <p>Loading...</p>
+              <p>Loading... bllshut</p>
           ) : (
             data.members.map((member, i) => (
-              <p key={i}>{member}</p>
+              <p key={i}> {member} </p>
             ))
           )}
 

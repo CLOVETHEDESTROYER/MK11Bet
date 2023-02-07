@@ -6,7 +6,9 @@ app = Flask(__name__)
 
 @app.route("/members")
 def members():
-    return {"members": ["Member1", "member2", "Members3"]}
+    return {
+        "members": ["Member1", "member2", "Members3", "bart simpson"]
+    }
 
 
 if __name__ == "__main__":
