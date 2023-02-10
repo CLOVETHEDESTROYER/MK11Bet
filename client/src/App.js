@@ -19,7 +19,7 @@ function App() {
       <div>
 
           {(typeof data.members === 'undefined') ? (
-              <p>Loading... bllshut</p>
+              <p>Loading... bullshit</p>
           ) : (
             data.members.map((member, i) => (
               <p key={i}> {member} </p>
